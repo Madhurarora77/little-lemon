@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: stretch;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container li {
+  list-style-type: none;
+}
+
+.container a {
+  display: inline-block;
+  padding: 25px;
+  margin: 0 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container a:hover {
+  background-color: lightsteelblue;
+}

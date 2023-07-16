@@ -5,7 +5,7 @@ import Footer from './semantic/Footer';
 function App() {
   return (
     <>
-      <header className="App-header">
+      <header className='App-header'>
         <Header />
       </header>
       <main>

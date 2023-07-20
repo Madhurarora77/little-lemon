@@ -9,7 +9,7 @@ import { About } from './components/About';
 import { Specials } from './components/Specials';
 import { Orders } from './components/Orders';
 import { Login } from './components/Login';
-import { BookingPage } from './components/BookingPage';
+import { Booking } from './components/Booking';
 function App() {
   return (
     <>
@@ -20,7 +20,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about-me' element={<About />} />
         <Route path='/menu' element={<Specials />} />
-        <Route path='/reservations' element={<BookingPage />} />
+        <Route path='/reservations' element={<Booking />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/login' element={<Login />} />
       </Routes>

@@ -1,8 +1,17 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('App', () => {
+  it('renders Home component when on the home page', () => {
+    render(
+      <Router>
+        <App />
+      </Router>
+    );
+
+    // Ensure that Home component is rendered for the home page
+    expect(screen.getByText(/This is main tag/i)).toBeInTheDocument();
+  })
+})

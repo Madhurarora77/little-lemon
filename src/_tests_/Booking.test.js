@@ -1,5 +1,10 @@
 import { initializeTimes, Booking } from '../components/Booking';
 import { render } from '@testing-library/react';
+const mockUsedNavigate = jest.fn();
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useNavigate: () => mockUsedNavigate,
+}));
 
 describe('initializeTimes', () => {
   it('returns the correct initial available times', () => {

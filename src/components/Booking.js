@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import { BookingForm } from './BookingForm';
 import { submitAPI } from '../Api';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const timeReducer = (state, action) => {
   switch (action.type) {
     case 'SET_AVAILABLE_TIMES':

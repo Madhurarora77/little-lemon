@@ -11,16 +11,22 @@
 .container li {
   list-style-type: none;
 }
-
+.nav-image {
+  width: 20%;
+}
 .container a {
   display: inline-block;
-  padding: 25px;
-  margin: 0 25px;
+  padding: 18px;
+  margin: 0 18px;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: black;
+  font-weight: 700;
 }
-
-.container a:hover {
-  background-color: lightsteelblue;
+a:visited,
+Link:visited,
+a:link,
+Link:link {
+  text-decoration: none;
+  color: black;
 }

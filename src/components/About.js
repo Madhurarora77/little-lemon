@@ -1,7 +1,15 @@
+import HomeImage from "../assets/food/food4.webp";
 export const About = () => {
   return (
-    <>
-      This is about page
-    </>
+    <header className="reserve-table">
+      <img
+        className="header-reserve"
+        src={HomeImage}
+        alt="Little Lemon Ingredients"
+      ></img>
+      <div className="reserve-header-text">
+        <h1>About us</h1>
+      </div>
+    </header>
   )
 }

@@ -11,6 +11,7 @@ import { Orders } from './components/Orders';
 import { Login } from './components/Login';
 import { Booking } from './components/Booking';
 import { BookingConfirmed } from './components/BookingConfirmed'
+import Footer from './semantic/Footer';
 function App() {
   return (
     <>
@@ -19,13 +20,14 @@ function App() {
       </header>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/about-me' element={<About />} />
+        <Route path='/about-us' element={<About />} />
         <Route path='/menu' element={<Specials />} />
         <Route path='/reservations' element={<Booking />} />
         <Route path='/orders' element={<Orders />} />
         <Route path='/login' element={<Login />} />
         <Route path='/BookingConfirmed' element={<BookingConfirmed />} />
       </Routes>
+      <Footer />
     </>
   );
 }

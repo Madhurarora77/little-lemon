@@ -128,7 +128,7 @@ export const BookingForm = (props) => {
         {occasionError && <p className="error">{occasionError}</p>}
       </label>
       <br />
-      <button className='submit-button' type="submit" aria-label="submit " disabled={dateError || guestsError || occasionError}>Submit</button>
+      <button className='action-button' type="submit" aria-label="submit " disabled={dateError || guestsError || occasionError}>Submit</button>
     </form>
   );
 };
